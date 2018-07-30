@@ -91,7 +91,7 @@
  '(company-require-match nil)
  '(company-show-numbers t)
  '(cua-mode t nil (cua-base))
- '(helm-ag-insert-at-point (quote word))
+ ;; AVI-FIX '(helm-ag-insert-at-point (quote word))
  '(omnisharp-auto-complete-want-documentation nil)
  '(omnisharp-company-sort-results t)
  ;; '(omnisharp-server-executable-path
@@ -187,10 +187,10 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   nil
   )
 
-(require 'helm-config)
-(require 'helm-command)
-(require 'helm-elisp)
-(require 'helm-misc)
+;; AVI-FIX (require 'helm-config)
+;; AVI-FIX (require 'helm-command)
+;; AVI-FIX (require 'helm-elisp)
+;; AVI-FIX (require 'helm-misc)
 (require 'omnisharp)
 (setq compilation-ask-about-save nil)
 (global-set-key (kbd "s-o") 'ido-find-file)
@@ -202,8 +202,8 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (global-set-key (kbd "C-=") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 
-(define-key helm-map (kbd "C-j") 'helm-next-line)
-(define-key helm-map (kbd "C-k") 'helm-previous-line)
+;; AVI-FIX (define-key helm-map (kbd "C-j") 'helm-next-line)
+;; AVI-FIX (define-key helm-map (kbd "C-k") 'helm-previous-line)
 ;;VS keys
 (define-key global-map (kbd "s-<left>") 'beginning-of-line)
 (define-key global-map (kbd "s-<right>") 'end-of-line)
@@ -212,8 +212,8 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (define-key global-map (kbd "s-f") 'toggle-frame-fullscreen)
 (define-key global-map (kbd "S-M-<return>") 'toggle-frame-fullscreen)
 (define-key global-map (kbd "C-g") 'goto-line)
-(define-key global-map (kbd "C-F") 'helm-projectile-ag)
-(global-set-key (kbd "C-x C-f") 'helm-for-files)
+;; AVI-FIX (define-key global-map (kbd "C-F") 'helm-projectile-ag)
+;; AVI-FIX (global-set-key (kbd "C-x C-f") 'helm-for-files)
 (global-set-key (kbd "C-i") 'isearch-forward)
 (define-key isearch-mode-map (kbd "<f3>") 'isearch-repeat-forward)
 (global-set-key [(control tab)] 'bury-buffer)
@@ -234,7 +234,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 (setq key-chord-one-key-delay 0.2)
 (setq key-chord-two-keys-delay 0.15)
-(define-key global-map (kbd "C-,") 'helm-projectile)
+;; AVI-FIX (define-key global-map (kbd "C-,") 'helm-projectile)
 (define-key company-active-map (kbd "C-j") 'company-select-next-or-abort)
 (define-key company-active-map (kbd "C-k") 'company-select-previous-or-abort)
 ;; show tabs and trailing whitespace
