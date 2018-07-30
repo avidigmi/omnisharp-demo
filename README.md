@@ -8,7 +8,7 @@ Don't use this if you already have an emacs installation that you want to keep!!
 
 This is meant for people who are new to emacs and want to get running quickly.
 
-To install ```git clone https://github.com/nosami/omnisharp-demo.git ~/.emacs.d```
+To install ```git clone https://github.com/avidigmi/omnisharp-demo.git ~/.emacs.d```
 
 For OSX, use http://emacsformacosx.com/ or ```brew install emacs -cocoa --with-gnutls```
 
